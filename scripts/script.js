@@ -2,6 +2,7 @@ let todos = []
 
 const renderTodos = (todos) => {
     const todoList = document.querySelector("#todos")
+    todoList.innerHTML =  " "
 
     todos.forEach((todo) => {
             todoList.appendChild(generateTodoDOM(todo))
