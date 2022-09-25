@@ -49,10 +49,11 @@ const generateTodoDOM = (todo) => {
 }
 
 const createTodo = (text) => {
-    todos.push(text)
+    todos.push({
+        title: text,
+        completed: false
+    })
 }
-
-
 
 document.querySelector('#new-todo').addEventListener('submit', (e) => {
     e.preventDefault()
